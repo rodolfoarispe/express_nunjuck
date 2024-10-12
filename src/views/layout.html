@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>{{title}}</title>  
+  <!-- Enlace al archivo CSS generado por Tailwind -->
+  <link href="/css/output.css" rel="stylesheet">
+</head>
+<body class="bg-gray-100 text-gray-900 font-sans leading-normal">
+  <header class="bg-blue-600 text-white p-4 shadow-lg">
+    <nav class="container mx-auto">
+      <ul class="flex space-x-4">
+        {% for item in menu %}
+        <li>
+          <a href="{{item.url}}" class="hover:text-blue-300 transition-colors duration-200">
+            {{item.text}}
+          </a>
+        </li>
+        {% endfor %} 
+      </ul>
+    </nav>  
+  </header>
+
+  
+  <main class="container mx-auto my-8 p-6 bg-white rounded-lg shadow-md">
+    {% block content %}{% endblock %}
+    <!-- {{body|safe}}   -->
+  </main>
+  
+  <footer class="bg-gray-800 text-white text-center p-4">
+    <p>&copy; {{year}} {{author}}</p>
+  </footer>
+</body>
+</html>

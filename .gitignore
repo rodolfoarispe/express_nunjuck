@@ -1,0 +1,51 @@
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+logfile*
+
+# Dependency directories
+/node_modules
+/.pnp
+.pnp.js
+
+# dotenv environment variables file
+.env
+
+# Tailwind CSS build output
+/public/css/output.css
+
+# IDE settings
+.vscode/
+
+# Nodemon
+nodemon.json
+.pids
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Tailwind CSS cache
+.tailwindcache/
+
+# Coverage directory used by tools like istanbul
+coverage/
+*.lcov
+
+# Production build
+/dist
+
+# Miscellaneous
+*.bak
+*.swp
+*.swo
+*.tmp
